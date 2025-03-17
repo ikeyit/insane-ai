@@ -1,0 +1,21 @@
+---
+description: 创建一个{project_name}项目时应用
+globs: 
+alwaysApply: false
+---
+当你收到指令：创建一个{project_name}项目时，执行以下操作：
+1. 先根据项目名{project_name}创建一个存放项目代码的目录，目录名{project_folder}为英文，尽量简短
+2. 根据我的想法生成网页
+3. 将项目目录链接添加到根目录下的index.html
+4. 将代码push到remote
+5. 打开链接：https://ikeyit.github.io/insane-ai/{project_folder}
+
+# codebase layout
+- 整个代码库一个静态网站
+- index.html为首页，作用是聚合导航项目
+- src保存原始资源，比如文案，图片等，不要直接引用。需要时复制到{project_folder}目录
+
+# tech stack
+- 生成纯静态页面，不要使用任何server
+- 可以使用tailwindcss作为css库
+- 考虑seo要求

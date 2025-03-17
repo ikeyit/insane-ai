@@ -1,0 +1,15 @@
+# 忽略src目录
+src/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器和IDE文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 依赖目录
+node_modules/ 

@@ -1,5 +1,173 @@
-<html>
-  <body>
-    hello
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insane AI - 创新科技</title>
+  <meta name="description" content="探索人工智能的无限可能">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .apple-blur {
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    .dark-mode .apple-blur {
+      background-color: rgba(29, 29, 31, 0.8);
+    }
+    .project-card {
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+    .apple-button {
+      background: #0071e3;
+      border-radius: 980px;
+      transition: all 0.3s ease;
+    }
+    .apple-button:hover {
+      background: #0077ED;
+    }
+    .section-headline {
+      font-size: 48px;
+      line-height: 1.08349;
+      font-weight: 600;
+      letter-spacing: -0.003em;
+    }
+    @media (max-width: 768px) {
+      .section-headline {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-[#1d1d1f]">
+  <!-- 页头 -->
+  <header class="sticky top-0 z-50 apple-blur border-b border-gray-200">
+    <nav class="max-w-[980px] mx-auto px-4 sm:px-6">
+      <div class="flex justify-between h-12">
+        <div class="flex items-center">
+          <a href="/" class="flex-shrink-0 flex items-center">
+            <span class="text-xl font-semibold">Insane AI</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="text-sm font-normal text-gray-700 hover:text-gray-900">关于</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 主横幅 -->
+  <section class="relative bg-[#fbfbfd] overflow-hidden">
+    <div class="max-w-[980px] mx-auto pt-16 pb-24 px-6">
+      <div class="text-center">
+        <h1 class="section-headline mb-2">
+          Insane AI. 超越想象。
+        </h1>
+        <h2 class="text-2xl font-normal text-gray-500 mt-2 mb-6">
+          探索人工智能的无限可能
+        </h2>
+    </div>
+  </section>
+
+  <!-- 导航 -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <div class="grid gap-8 md:grid-cols-4">
+        <!-- 在这里插入新的项目导航 -->
+
+        <!-- 10大新闻项目 -->
+        <a href="news-top10/" class="project-card group rounded-3xl overflow-hidden shadow-md hover:shadow-xl bg-[#f5f5f7]">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">10大新闻</h3>
+            <p class="text-base text-gray-500 mb-6">热点新闻聚合</p>
+          </div>
+          <div class="px-8 pb-8">
+            <div class="w-full rounded-xl overflow-hidden">
+              <img src="https://placehold.co/600x400/f5f5f7/1d1d1f?text=新闻" alt="10大新闻" class="w-full h-auto">
+            </div>
+          </div>
+        </a>
+
+        <!-- 项目 -->
+        <a href="help/" class="project-card group rounded-3xl overflow-hidden shadow-md hover:shadow-xl bg-[#f5f5f7]">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold text-[#1d1d1f] mb-2">帮助</h3>
+            <p class="text-base text-gray-500 mb-6">如何使用该网站</p>
+          </div>
+          <div class="px-8 pb-8">
+            <div class="w-full rounded-xl overflow-hidden">
+              <img src="https://placehold.co/600x400/f5f5f7/1d1d1f?text=帮助" alt="帮助" class="w-full h-auto">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于部分 -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-[980px] mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="section-headline mb-2">
+          关于网站
+        </h2>
+        <p class="text-xl text-gray-500 mt-2">
+          该网站是个人网站，用于记录个人生活，分享个人想法，记录个人成长。由AI生成和维护！
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <p class="text-lg text-gray-700 mb-6">
+            我们相信技术应该服务于人类，而不是相反。通过不断创新和优化，我们的产品能够帮助用户更高效地工作和生活，创造更美好的未来。
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <img src="https://placehold.co/600x400/f5f5f7/1d1d1f?text=关于我们" alt="关于Insane AI" class="w-full h-auto rounded-xl shadow-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-[#f5f5f7] py-12">
+    <div class="max-w-[980px] mx-auto px-6">
+      <div class="border-b border-gray-300 pb-8 mb-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-500 mb-4">支持</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-700">联系我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-500 mb-4">关注我们</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-500 hover:text-gray-700">
+                <i class="fab fa-weixin text-lg"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-700">
+                <i class="fab fa-weibo text-lg"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-700">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-gray-500">
+        <p class="mb-2">Copyright © 2023 Insane AI. 保留所有权利。</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>

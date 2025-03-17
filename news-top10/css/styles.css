@@ -1,0 +1,25 @@
+/* 自定义样式 */
+.news-item {
+    transition: transform 0.2s ease-in-out;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+}
+
+.news-title {
+    color: #2c3e50;
+}
+
+.news-time {
+    color: #7f8c8d;
+}
+
+.news-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+} 

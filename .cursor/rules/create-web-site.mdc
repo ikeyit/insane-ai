@@ -1,0 +1,17 @@
+---
+description: 创建一个{site_name}网站
+globs: 
+alwaysApply: false
+---
+创建{site_name}网站时，务必执行以下操作：
+1. 先根据网站名{site_name}创建一个存放网站代码的目录，目录名{site_folder}为英文，尽量简短
+2. 根据我的想法生成网页
+3. 更新根目录的index.html添加网站链接
+4. 执行git commit，git push将生成的代码推送到远程仓库
+5. 打开浏览器导航到：https://ikeyit.github.io/insane-ai/{site_folder}
+
+# 注意事项
+- html里需要使用src中的文件时，先复制到{site_folder}目录，再链接
+- 生成纯静态页面，不要使用任何server
+- 使用tailwindcss作为css库
+- 考虑seo要求

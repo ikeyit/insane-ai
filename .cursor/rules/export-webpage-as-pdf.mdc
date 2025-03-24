@@ -1,0 +1,20 @@
+---
+description: 将网页导出成pdf
+globs: 
+alwaysApply: false
+---
+执行命令行使用Edge或chrome将网页导出pdf，不要页角页眉
+Mac
+'''
+/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge --headless --disable-gpu --print-to-pdf="{pdf文件路径}" --print-to-pdf-no-header "{网页地址}"
+'''
+'''
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --disable-gpu --print-to-pdf="{pdf文件路径}" --print-to-pdf-no-header "{网页地址}"
+'''
+Windows
+‘‘‘
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --print-to-pdf="{pdf文件路径}" --print-to-pdf-no-header "{网页地址}"
+‘‘‘
+‘‘‘
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --headless --disable-gpu --print-to-pdf="{pdf文件路径}" --print-to-pdf-no-header "{网页地址}"
+‘‘‘

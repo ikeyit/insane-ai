@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王大锤 - 创意技术总监简历</title>
+  <meta name="description" content="王大锤的个人简历 - 专注于金融科技产品设计、品牌视觉设计的创意技术总监">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .accent-color {
+      color: #2962ff;
+    }
+    .accent-bg {
+      background-color: #2962ff;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      position: relative;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: #2962ff;
+    }
+    .project-card {
+      transition: all 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .nav-item {
+      position: relative;
+    }
+    .nav-item:after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #2962ff;
+      transition: width 0.3s;
+    }
+    .nav-item:hover:after, .nav-item.active:after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <header class="fixed w-full top-0 bg-white shadow-md z-50">
+    <nav class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <span class="text-2xl font-bold accent-color">王大锤</span>
+        </div>
+        <div class="hidden md:flex space-x-10">
+          <a href="#about" class="nav-item">关于我</a>
+          <a href="#experience" class="nav-item">工作经验</a>
+          <a href="#skills" class="nav-item">专业技能</a>
+          <a href="#portfolio" class="nav-item">设计作品</a>
+          <a href="#contact" class="nav-item">联系方式</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 主页面内容 -->
+  <main class="container mx-auto px-6 pt-24 pb-16">
+    <!-- 个人简介 -->
+    <section id="about" class="py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">你好，我是<span class="accent-color">王大锤</span></h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600">创意技术总监 / 产品设计专家</h2>
+        <p class="text-lg text-gray-700 mb-8">
+          我是一位拥有10年行业经验的设计技术专家，专注于金融科技产品设计与品牌视觉打造。我擅长将复杂的技术概念转化为直观的用户体验，并且有丰富的团队管理与跨部门协作经验。
+        </p>
+        <div class="flex space-x-4">
+          <a href="#contact" class="accent-bg text-white py-3 px-6 rounded-full hover:bg-blue-700 transition">联系我</a>
+          <a href="王大锤简历.pdf" target="_blank" class="border-2 border-blue-600 text-blue-600 py-3 px-6 rounded-full hover:bg-blue-50 transition">下载简历</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="我帅气的头像.webp" alt="王大锤照片" class="rounded-full w-64 h-64 object-cover border-4 border-blue-500 shadow-lg">
+      </div>
+    </section>
+
+    <!-- 工作经验 -->
+    <section id="experience" class="py-16">
+      <h2 class="section-title">工作经验</h2>
+      <div class="space-y-10">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold mb-2">创意技术总监</h3>
+              <p class="text-blue-600 font-medium">星云科技</p>
+            </div>
+            <span class="text-gray-500">2020 - 至今</span>
+          </div>
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>负责智能推荐系统的前端视觉设计与用户体验，提升点击率35%</li>
+            <li>设计并开发数据可视化大屏，日均处理10TB+数据，成为公司标杆案例</li>
+            <li>主导管理后台的重构项目，采用React+TypeScript技术栈，提升用户体验</li>
+            <li>领导产品设计团队，确保产品视觉与交互设计符合金融科技行业标准</li>
+            <li>建立统一的品牌视觉系统，确保各渠道品牌表达一致性</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold mb-2">产品设计师（兼职）</h3>
+              <p class="text-blue-600 font-medium">幻象创意</p>
+            </div>
+            <span class="text-gray-500">2018 - 2020</span>
+          </div>
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>负责B端金融产品界面设计，包括客户端和Web界面</li>
+            <li>主导公司品牌视觉系统重构，提升品牌识别度</li>
+            <li>负责公众号等宣传渠道的视觉设计，形成统一调性</li>
+            <li>参与多个金融科技产品的设计与研发</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold mb-2">大数据工程师</h3>
+              <p class="text-blue-600 font-medium">数海信息</p>
+            </div>
+            <span class="text-gray-500">2017 - 2020</span>
+          </div>
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>搭建分布式日志分析系统，降低查询延迟60%</li>
+            <li>开发交互友好的数据查询平台</li>
+            <li>负责数据可视化界面设计，提升数据解读效率</li>
+            <li>参与品牌官网的视觉优化与重构</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-xl font-bold mb-2">前端开发工程师</h3>
+              <p class="text-blue-600 font-medium">极光软件</p>
+            </div>
+            <span class="text-gray-500">2015 - 2017</span>
+          </div>
+          <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+            <li>负责电商平台商家后台的UI设计与前端开发</li>
+            <li>使用AngularJS优化商家后台的操作体验</li>
+            <li>参与电商平台品牌视觉设计</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section class="py-16">
+      <h2 class="section-title">教育背景</h2>
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-xl font-bold mb-2">人工智能与大数据 硕士</h3>
+            <p class="text-blue-600 font-medium">五道口技术学院</p>
+          </div>
+          <span class="text-gray-500">2013 - 2015</span>
+        </div>
+        <p class="mt-4 text-gray-700">
+          毕业论文《基于Transformer的金融文本情感分析系统》获得优秀论文奖
+        </p>
+      </div>
+      
+      <div class="bg-white p-8 rounded-lg shadow-md mt-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-xl font-bold mb-2">计算机科学与技术 学士</h3>
+            <p class="text-blue-600 font-medium">蓝翔理工大学</p>
+          </div>
+          <span class="text-gray-500">2009 - 2013</span>
+        </div>
+        <p class="mt-4 text-gray-700">
+          大二参加校园网页设计大赛，获校级一等奖
+        </p>
+      </div>
+    </section>
+
+    <!-- 专业技能 -->
+    <section id="skills" class="py-16">
+      <h2 class="section-title">专业技能</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">设计能力</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">UI/UX设计</span>
+                <span>95%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">品牌视觉设计</span>
+                <span>90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">数据可视化</span>
+                <span>92%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 92%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">产品原型设计</span>
+                <span>85%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold mb-4">技术能力</h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">前端开发 (React/TypeScript)</span>
+                <span>90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">Adobe Creative Suite</span>
+                <span>88%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 88%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">Figma/Sketch</span>
+                <span>95%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="font-medium">数据分析与处理</span>
+                <span>85%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="accent-bg rounded-full h-2" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 bg-white p-8 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-4">专业特长</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">金融科技产品设计</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">品牌视觉系统</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">团队管理</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">用户体验设计</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">数据可视化</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">跨部门协作</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">前端开发</span>
+          <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full">创意设计</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 设计作品集 -->
+    <section id="portfolio" class="py-16">
+      <h2 class="section-title">设计作品</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="产品设计作品-dashboard.jpeg" alt="金融数据仪表盘设计" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">金融数据仪表盘</h3>
+            <p class="text-gray-600 mb-4">为金融机构设计的数据可视化界面，使用户可以直观地了解市场动态和投资组合表现。</p>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UI设计</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">数据可视化</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="产品设计作品-eshop app.png" alt="电商App界面设计" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">电商App界面设计</h3>
+            <p class="text-gray-600 mb-4">为电商平台设计的移动应用界面，注重用户体验和转化率优化。</p>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">移动UI</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">用户体验</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+          <img src="产品设计作品 - cybertruck app.jpg" alt="车载系统界面设计" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">车载系统界面设计</h3>
+            <p class="text-gray-600 mb-4">为智能汽车设计的车载系统界面，融合了科技感与易用性。</p>
+            <div class="flex space-x-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">UI设计</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">交互设计</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-16">
+      <h2 class="section-title">联系方式</h2>
+      <div class="bg-white p-8 rounded-lg shadow-md">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">想和我合作?</h3>
+            <p class="text-gray-700 mb-6">
+              如果您对我的作品和经历感兴趣，欢迎随时与我联系，探讨合作可能。
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <i class="fas fa-envelope text-blue-600 mr-3"></i>
+                <span>wangdachui@example.com</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone text-blue-600 mr-3"></i>
+                <span>+86 123 4567 8901</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+                <span>北京市朝阳区</span>
+              </li>
+            </ul>
+            <div class="mt-6 flex space-x-4">
+              <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+              <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                <i class="fab fa-behance fa-2x"></i>
+              </a>
+              <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <form class="space-y-4">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">邮箱</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              </div>
+              <div>
+                <label for="message" class="block text-gray-700 mb-2">留言</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              </div>
+              <button type="submit" class="accent-bg text-white py-3 px-6 rounded-full hover:bg-blue-700 transition w-full">发送消息</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="bg-gray-800 text-white py-10">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2023 王大锤. 保留所有权利.</p>
+      <p class="mt-2 text-gray-400">创意技术总监 / 产品设计专家</p>
+    </div>
+  </footer>
+
+  <script>
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // 滚动时激活导航项
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('.nav-item');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.clientHeight;
+        if(pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if(item.getAttribute('href').slice(1) === current) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html> 

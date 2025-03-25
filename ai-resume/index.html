@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王大锤 - AI技术专家简历</title>
+  <meta name="description" content="王大锤 - 资深AI技术专家个人简历">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    
+    .resume-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile-section {
+      background-color: #0070f3;
+      color: white;
+    }
+    
+    .section-title {
+      font-weight: 600;
+      color: #0070f3;
+      border-bottom: 2px solid #0070f3;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+    
+    .skill-tag {
+      background-color: #e6f2ff;
+      color: #0070f3;
+      border-radius: 4px;
+      padding: 4px 8px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      display: inline-block;
+      font-size: 14px;
+    }
+    
+    .timeline-item {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 24px;
+    }
+    
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #0070f3;
+    }
+    
+    .timeline-item:after {
+      content: '';
+      position: absolute;
+      left: 7px;
+      top: 18px;
+      height: calc(100% + 12px);
+      width: 2px;
+      background-color: #e6f2ff;
+    }
+    
+    .timeline-item:last-child:after {
+      display: none;
+    }
+  </style>
+</head>
+<body class="py-8">
+  <div class="resume-container mx-auto rounded-lg overflow-hidden">
+    <!-- 个人信息区域 -->
+    <div class="profile-section p-8 flex flex-col md:flex-row items-center md:items-start gap-6">
+      <div class="w-40 h-40 rounded-full overflow-hidden flex-shrink-0 border-4 border-white">
+        <img src="我帅气的头像.webp" alt="王大锤的照片" class="w-full h-full object-cover">
+      </div>
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">王大锤</h1>
+        <p class="text-xl md:text-2xl font-light mb-4">AI技术专家 / 全栈开发工程师</p>
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start mb-4">
+          <div class="flex items-center">
+            <i class="fas fa-envelope mr-2"></i>
+            <span>wangdachui@example.com</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-phone mr-2"></i>
+            <span>187-8888-8888</span>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>北京市海淀区</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 主要内容区域 -->
+    <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- 左侧栏 -->
+      <div class="md:col-span-1">
+        <!-- 专业技能 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">专业技能</h2>
+          <div class="flex flex-wrap">
+            <span class="skill-tag">深度学习</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Transformer</span>
+            <span class="skill-tag">BERT</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">大模型优化</span>
+            <span class="skill-tag">分布式训练</span>
+            <span class="skill-tag">模型量化</span>
+            <span class="skill-tag">GPU优化</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spark</span>
+            <span class="skill-tag">Flink</span>
+            <span class="skill-tag">大数据处理</span>
+          </div>
+        </div>
+        
+        <!-- 教育背景 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">教育背景</h2>
+          <div class="timeline-item">
+            <h3 class="font-semibold">五道口技术学院</h3>
+            <p class="text-sm text-gray-600">人工智能与大数据 - 硕士学位</p>
+            <p class="text-sm">2015 - 2017</p>
+            <p class="mt-2 text-sm">毕业论文《基于Transformer的金融文本情感分析系统》获得优秀论文奖</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="font-semibold">蓝翔理工大学</h3>
+            <p class="text-sm text-gray-600">计算机科学与技术 - 学士学位</p>
+            <p class="text-sm">2011 - 2015</p>
+          </div>
+        </div>
+        
+        <!-- 设计作品 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">产品设计作品</h2>
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <img src="产品设计作品-dashboard.jpeg" alt="数据看板UI设计" class="w-full h-auto rounded-lg">
+              <p class="text-xs text-center mt-1">数据看板UI设计</p>
+            </div>
+            <div>
+              <img src="产品设计作品-eshop app.png" alt="电商App设计" class="w-full h-auto rounded-lg">
+              <p class="text-xs text-center mt-1">电商App设计</p>
+            </div>
+            <div class="col-span-2">
+              <img src="产品设计作品 - cybertruck app.jpg" alt="Cybertruck App设计" class="w-full h-auto rounded-lg">
+              <p class="text-xs text-center mt-1">Cybertruck App概念设计</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 右侧栏 -->
+      <div class="md:col-span-2">
+        <!-- 个人简介 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">个人简介</h2>
+          <p class="mb-2">我是一名拥有10年工作经验的AI技术专家，专注于大模型训练与优化、深度学习框架应用和大规模数据处理。从Java开发工程师起步，逐步成长为全栈技术专家，在AI领域有丰富的项目经验。</p>
+          <p>我在大模型训练与推理优化方面有深厚经验，擅长解决实际部署中的性能瓶颈问题，并具有模型压缩、分布式训练的实战能力。我持续跟踪AI技术前沿，并有效地将技术方案转化为产品功能，同时具备出色的团队协作和技术指导能力。</p>
+        </div>
+        
+        <!-- 工作经历 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">工作经历</h2>
+          
+          <div class="timeline-item">
+            <div class="flex justify-between">
+              <h3 class="font-semibold">星云科技</h3>
+              <span class="text-sm text-gray-600">2020 - 至今</span>
+            </div>
+            <p class="text-gray-700 mb-2">AI技术负责人</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>领导智能推荐系统研发，优化深度学习推荐算法，使点击率提升35%</li>
+              <li>设计并实现分布式训练框架，加速大规模模型训练，训练效率提升40%</li>
+              <li>应用模型量化、剪枝等模型压缩技术，推理速度提升3倍，资源消耗降低50%</li>
+              <li>使用Spark+Flink开发数据处理管道，日均处理10TB+数据，支持实时推荐</li>
+              <li>优化NLP模型架构(BERT+BiLSTM)，提升客服机器人准确率至92%</li>
+              <li>主导管理后台重构，采用React+TypeScript技术栈，提升页面加载速度2倍</li>
+              <li>组织每周技术分享会，指导初级工程师，建立团队知识库</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="flex justify-between">
+              <h3 class="font-semibold">数海信息</h3>
+              <span class="text-sm text-gray-600">2017 - 2020</span>
+            </div>
+            <p class="text-gray-700 mb-2">大数据工程师</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>设计并实现分布式日志分析系统，成功将查询延迟降低60%</li>
+              <li>开发数据可视化平台，使用Vue.js构建前端交互界面</li>
+              <li>优化数据处理流程，实现TB级数据的高效处理和分析</li>
+              <li>参与设计和实现公司核心数据产品的架构</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="flex justify-between">
+              <h3 class="font-semibold">幻象创意</h3>
+              <span class="text-sm text-gray-600">2018 - 2020</span>
+            </div>
+            <p class="text-gray-700 mb-2">兼职产品设计师</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>设计多个移动应用和网站界面，优化用户体验</li>
+              <li>将技术和设计知识相结合，创造更具可用性的产品</li>
+            </ul>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="flex justify-between">
+              <h3 class="font-semibold">极光软件</h3>
+              <span class="text-sm text-gray-600">2015 - 2017</span>
+            </div>
+            <p class="text-gray-700 mb-2">Java开发工程师</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>参与电商平台核心系统开发，设计分布式锁机制解决超卖问题</li>
+              <li>使用AngularJS优化商家后台操作体验</li>
+              <li>负责系统性能调优，提高系统并发处理能力</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- 项目经历 -->
+        <div class="mb-8">
+          <h2 class="section-title text-xl">核心项目经历</h2>
+          
+          <div class="mb-4">
+            <h3 class="font-semibold">智能推荐系统优化</h3>
+            <p class="text-sm text-gray-700 mb-2">星云科技 | 2021-2023</p>
+            <p class="text-sm">负责大规模推荐模型的优化和部署，包括：</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>实现模型量化和剪枝，降低推理延迟，保持模型精度</li>
+              <li>构建分布式训练框架，支持多GPU并行训练</li>
+              <li>基于Transformer架构设计多模态特征融合机制</li>
+              <li>设计模型热更新机制，实现无感知模型升级</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold">数据可视化大屏系统</h3>
+            <p class="text-sm text-gray-700 mb-2">星云科技 | 2020-2021</p>
+            <p class="text-sm">设计和开发实时数据可视化系统：</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm">
+              <li>使用Spark和Flink构建实时数据处理管道</li>
+              <li>设计自适应数据聚合算法，支持PB级数据的快速分析</li>
+              <li>实现低延迟数据查询接口，前端响应时间低于100ms</li>
+              <li>开发交互式数据探索界面，提升数据分析效率</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 底部信息 -->
+    <div class="bg-gray-100 p-6 text-center text-gray-600 text-sm">
+      <p>此简历由王大锤创建 | <a href="resume.pdf" class="text-blue-600 hover:underline">下载PDF版本</a></p>
+    </div>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>皮搋子 Pro Max - 革命性管道疏通体验</title>
+  <meta name="description" content="皮搋子 Pro Max，颠覆传统疏通工具，让您的管道畅通无阻。一捅一拔，即刻见效。">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('https://static.apple.com.cn/fonts/sf-pro-display/v4/sf-pro-display_regular.woff2') format('woff2');
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('https://static.apple.com.cn/fonts/sf-pro-display/v4/sf-pro-display_semibold.woff2') format('woff2');
+      font-weight: 600;
+    }
+    @font-face {
+      font-family: 'SF Pro Display';
+      src: url('https://static.apple.com.cn/fonts/sf-pro-display/v4/sf-pro-display_bold.woff2') format('woff2');
+      font-weight: 700;
+    }
+    
+    body {
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    
+    .apple-blur {
+      backdrop-filter: saturate(180%) blur(20px);
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .section-headline {
+      font-size: 56px;
+      line-height: 1.07143;
+      font-weight: 600;
+      letter-spacing: -0.005em;
+    }
+    
+    .section-subhead {
+      font-size: 28px;
+      line-height: 1.14286;
+      font-weight: 400;
+      letter-spacing: 0.004em;
+    }
+    
+    .pin-section {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .parallax-image {
+      transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    
+    .color-ribbon {
+      height: 6px;
+      background: linear-gradient(to right, #ff453a, #ff9f0a, #ffd60a, #32d74b, #64d2ff, #0a84ff, #5e5ce6, #bf5af2);
+    }
+    
+    @media (max-width: 768px) {
+      .section-headline {
+        font-size: 40px;
+      }
+      .section-subhead {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- 导航栏 -->
+  <header class="sticky top-0 z-50 apple-blur border-b border-gray-800">
+    <div class="color-ribbon"></div>
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="/" class="flex-shrink-0 flex items-center">
+            <span class="text-2xl font-semibold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">皮搋子</span>
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#features" class="text-sm font-normal text-gray-300 hover:text-white">产品特点</a>
+          <a href="#colors" class="text-sm font-normal text-gray-300 hover:text-white">颜色</a>
+          <a href="#buy" class="text-sm font-normal text-gray-300 hover:text-white">立即购买</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 英雄区块 -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 to-black">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <h1 class="section-headline mb-4 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+        皮搋子 Pro Max
+      </h1>
+      <h2 class="section-subhead mb-8 text-gray-300 max-w-3xl mx-auto">
+        前所未有的疏通体验。一捅一拔，畅享人生。
+      </h2>
+      <div class="mt-10 max-w-5xl mx-auto">
+        <img src="主图.jpeg" alt="皮搋子 Pro Max" class="w-full h-auto object-contain rounded-2xl shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品特性 -->
+  <section id="features" class="py-32 bg-black">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="section-headline mb-4">突破性能。颠覆传统。</h2>
+        <p class="section-subhead text-gray-400 max-w-3xl mx-auto">
+          全新皮搋子 Pro Max，配备超能疏通技术，让您告别管道堵塞烦恼。
+        </p>
+      </div>
+
+      <!-- 功能1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+        <div class="order-2 md:order-1">
+          <h3 class="text-3xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">革命性疏通技术</h3>
+          <p class="text-xl text-gray-300 mb-6">
+            全新皮搋子配备专利"一捅到底™"技术，能够瞬间疏通任何堵塞。无论是厨房水槽、浴室地漏还是马桶，皮搋子 Pro Max 都能一击即中，让您的管道恢复如新。
+          </p>
+          <p class="text-xl text-gray-300">
+            采用高密度超级弹性材料，提供前所未有的深度清洁体验。我们的工程师团队耗时三年，创造出这款颠覆性的管道急救神器。
+          </p>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="功能1.jpeg" alt="皮搋子疏通技术" class="w-full h-auto rounded-3xl shadow-2xl">
+        </div>
+      </div>
+
+      <!-- 功能2 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-32">
+        <div>
+          <img src="颜色1.jpeg" alt="皮搋子多功能使用" class="w-full h-auto rounded-3xl shadow-2xl">
+        </div>
+        <div>
+          <h3 class="text-3xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">超能静音技术</h3>
+          <p class="text-xl text-gray-300 mb-6">
+            当您不想听别人唠叨时，皮搋子 Pro Max 可变身为"静音卫士™"。独特的人体工学设计和柔软材质，让它成为您安静环境的守护者。
+          </p>
+          <p class="text-xl text-gray-300">
+            我们的静音技术经过千万次实验室测试，保证在任何情况下都能提供最佳静音效果。无论是家庭争吵、办公室闲聊还是公共场合的噪音，皮搋子都能帮您创造宁静空间。
+          </p>
+        </div>
+      </div>
+
+      <!-- 功能3 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div class="order-2 md:order-1">
+          <h3 class="text-3xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">居家装饰新主张</h3>
+          <p class="text-xl text-gray-300 mb-6">
+            皮搋子 Pro Max 不只是工具，更是您家中的艺术品。鲜艳夺目的外观设计，可以为您的家居环境增添一抹亮色。
+          </p>
+          <p class="text-xl text-gray-300">
+            我们与全球顶尖设计师合作，打造了这款兼具功能性和美学价值的产品。摆在客厅、厨房或浴室，都能瞬间提升您家的格调。皮搋子 Pro Max，不只是疏通神器，更是您品味的象征。
+          </p>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="颜色2.jpeg" alt="皮搋子装饰效果" class="w-full h-auto rounded-3xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 颜色选择 -->
+  <section id="colors" class="py-32 bg-gradient-to-b from-black to-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-20">
+        <h2 class="section-headline mb-4">缤纷色彩。彰显个性。</h2>
+        <p class="section-subhead text-gray-400 max-w-3xl mx-auto">
+          全新皮搋子 Pro Max，提供多种绚丽色彩，总有一款适合您。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
+          <div class="p-8 text-center">
+            <h3 class="text-2xl font-semibold mb-2">热情红</h3>
+            <p class="text-gray-200">为生活增添激情</p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
+          <div class="p-8 text-center">
+            <h3 class="text-2xl font-semibold mb-2">深海蓝</h3>
+            <p class="text-gray-200">如海洋般深邃</p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-amber-400 to-yellow-500 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
+          <div class="p-8 text-center">
+            <h3 class="text-2xl font-semibold mb-2">阳光黄</h3>
+            <p class="text-gray-200">照亮您的每一天</p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
+          <div class="p-8 text-center">
+            <h3 class="text-2xl font-semibold mb-2">森林绿</h3>
+            <p class="text-gray-200">带来自然的宁静</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 购买区块 -->
+  <section id="buy" class="py-32 bg-gradient-to-b from-gray-900 to-black">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="section-headline mb-6">皮搋子 Pro Max</h2>
+      <p class="text-2xl text-gray-300 mb-8">从 ¥799 起</p>
+      <div class="space-y-4 mb-12">
+        <p class="text-xl text-gray-400">
+          可分期，每月仅需 ¥66.58*
+        </p>
+        <p class="text-xl text-gray-400">
+          购买即赠送专业疏通教程
+        </p>
+      </div>
+      <a href="#" class="inline-block px-12 py-5 text-xl font-semibold bg-blue-600 text-white rounded-full transition-all duration-300 hover:bg-blue-700 transform hover:scale-105">
+        立即购买
+      </a>
+      <p class="mt-6 text-gray-500">
+        *基于12个月分期付款计算
+      </p>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-black py-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="border-b border-gray-800 pb-8 mb-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 mb-4">产品</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">皮搋子 Pro Max</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">皮搋子 Pro</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">皮搋子 Mini</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 mb-4">支持</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">使用指南</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">常见问题</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">联系我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 mb-4">关于我们</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">公司简介</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">新闻中心</a></li>
+              <li><a href="#" class="text-xs text-gray-500 hover:text-gray-300">加入我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-semibold text-gray-400 mb-4">关注我们</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-500 hover:text-gray-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/></svg>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-300">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-gray-500">
+        <p class="mb-2">Copyright © 2023 皮搋子科技有限公司. 保留所有权利。</p>
+        <p>皮搋子、"一捅到底™"和"静音卫士™"是皮搋子科技有限公司在中国和其他国家/地区注册的商标。</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 初始化GSAP ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // 英雄区域视差效果
+      gsap.to('.parallax-image', {
+        scrollTrigger: {
+          trigger: '.parallax-image',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true
+        },
+        y: 150,
+        ease: 'none'
+      });
+      
+      // 特性部分渐入动画
+      gsap.utils.toArray('#features .grid').forEach((section, i) => {
+        gsap.from(section, {
+          scrollTrigger: {
+            trigger: section,
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none reverse'
+          },
+          opacity: 0,
+          y: 100,
+          duration: 1,
+          ease: 'power2.out'
+        });
+      });
+      
+      // 颜色选择部分动画
+      gsap.from('#colors .grid > div', {
+        scrollTrigger: {
+          trigger: '#colors',
+          start: 'top 70%',
+          end: 'bottom 20%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: 'back.out(1.7)'
+      });
+    });
+  </script>
+</body>
+</html> 
